@@ -1,0 +1,422 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #2563eb !important;
+}
+
+main {
+    background-color: #f4f8ff;
+    min-height: 70vh;
+}
+
+h1 {
+    color: #1e3a8a;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.lead {
+    color: #64748b;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+.btn-primary:hover {
+    background-color: #1e40af;
+    border-color: #1e40af;
+}
+
+footer {
+    color: #64748b;
+}
+
+/* SEÇÃO INICIAL */
+
+.hero {
+    background-color: #f4f8ff;
+    padding: 100px 0;
+}
+
+.ods-badge {
+    display: inline-block;
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero-card {
+    background-color: white;
+    padding: 50px 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+}
+
+.brain-icon {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.hero-card h2 {
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+/* SOBRE O PROJETO */
+
+.sobre {
+    background-color: white;
+}
+
+.section-subtitle {
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.sobre h2 {
+    color: #1e3a8a;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+.section-text {
+    color: #64748b;
+    font-size: 1.1rem;
+}
+
+.about-card {
+    background-color: #eff6ff;
+    padding: 40px;
+    border-radius: 25px;
+}
+
+.about-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.about-card h3 {
+    color: #1e3a8a;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-card p {
+    color: #64748b;
+}
+
+.about-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.about-item-icon {
+    background-color: #dbeafe;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+
+.about-item h4 {
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+.about-item p {
+    color: #64748b;
+    margin-bottom: 0;
+}
+
+/* ODS 3 */
+
+.ods {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+.ods-subtitle {
+    color: #bfdbfe;
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.ods h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 15px 0 25px;
+}
+
+.ods p {
+    color: #dbeafe;
+}
+
+.ods-number {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #93c5fd;
+    border-radius: 30px;
+}
+
+.ods-number span {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.ods-number strong {
+    font-size: 7rem;
+    line-height: 1;
+}
+
+.ods-highlight {
+    margin-top: 30px;
+    padding: 20px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    border-left: 4px solid #60a5fa;
+
+    font-weight: bold;
+}
+
+/* BEM-ESTAR */
+
+.temas {
+    background-color: #f4f8ff;
+}
+
+.temas-title {
+    color: #1e3a8a;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.tema-card {
+    background-color: white;
+    height: 100%;
+    padding: 30px 25px;
+
+    border-radius: 20px;
+
+    border: 1px solid #dbeafe;
+
+    transition: 0.3s;
+}
+
+.tema-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px
+        rgba(37, 99, 235, 0.15);
+}
+
+.tema-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.tema-card h3 {
+    color: #1e3a8a;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.tema-card p {
+    color: #64748b;
+    margin-bottom: 0;
+}
+
+/* PÚBLICO-ALVO */
+
+.publico {
+    background-color: white;
+}
+
+.publico-title {
+    color: #1e3a8a;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0 25px;
+}
+
+.publico-card {
+    background-color: #eff6ff;
+    padding: 35px;
+    border-radius: 25px;
+}
+
+.publico-item {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid #bfdbfe;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    color: #1e3a8a;
+}
+
+.publico-item:last-child {
+    border-bottom: none;
+}
+
+.publico-icon {
+    font-size: 2rem;
+}
+
+/* RECURSOS */
+
+.recursos {
+    background-color: #f4f8ff;
+}
+
+.recursos-title {
+    color: #1e3a8a;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.recurso-card {
+    background-color: white;
+    padding: 40px 30px;
+    height: 100%;
+
+    border-radius: 25px;
+    border: 1px solid #dbeafe;
+}
+
+.recurso-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.recurso-card h3 {
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+.recurso-card p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.btn-outline-primary {
+    color: #2563eb;
+    border-color: #2563eb;
+}
+
+.btn-outline-primary:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+/* RODAPÉ */
+
+.footer {
+    background-color: #1e3a8a;
+    color: white;
+
+    padding: 60px 0 25px;
+}
+
+.footer h3,
+.footer h4 {
+    font-weight: bold;
+}
+
+.footer p {
+    color: #dbeafe;
+}
+
+.footer hr {
+    border-color: rgba(255, 255, 255, 0.2);
+
+    margin: 30px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.7rem;
+    }
+
+    .sobre h2,
+    .temas-title,
+    .publico-title,
+    .recursos-title,
+    .ods h2 {
+        font-size: 2rem;
+    }
+
+    .ods-number {
+        width: 200px;
+        height: 200px;
+    }
+
+    .ods-number strong {
+        font-size: 5rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+}

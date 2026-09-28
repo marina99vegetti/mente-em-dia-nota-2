@@ -15,7 +15,7 @@ function App() {
       <main>
         <Hero />
         <Sobre />
-        <Ods />
+        <Ods /> 
         <Temas />
         <Publico />
         <Recursos />
@@ -29,4 +29,7 @@ function App() {
   )
 }
 
-export default App
+export default App 
+
+
+

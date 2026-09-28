@@ -1,39 +1,77 @@
 function Temas() {
   const temas = [
     {
+      icone: '🧠',
       titulo: 'Saúde Mental',
-      descricao: 'Informações para compreender e cuidar da saúde emocional.'
+      descricao:
+        'Conheça a importância do autocuidado, das emoções e do bem-estar psicológico.'
     },
     {
+      icone: '🌙',
       titulo: 'Sono',
-      descricao: 'A importância de uma boa rotina de sono para o bem-estar.'
+      descricao:
+        'Entenda como o descanso é importante para o corpo e para a mente.'
     },
     {
+      icone: '🍎',
       titulo: 'Alimentação',
-      descricao: 'Hábitos alimentares e sua relação com a qualidade de vida.'
+      descricao:
+        'Informações sobre hábitos alimentares e qualidade de vida.'
     },
     {
+      icone: '🚶',
       titulo: 'Movimento',
-      descricao: 'A prática de atividades físicas como parte do autocuidado.'
+      descricao:
+        'Descubra a importância de movimentar o corpo para o bem-estar.'
     }
   ]
 
   return (
-    <section id="temas">
-      <h2>Bem-estar</h2>
+    <section id="temas" className="temas py-5">
 
-      <p>
-        Conheça alguns temas relacionados à saúde e à qualidade de vida.
-      </p>
+      <div className="container py-5">
 
-      <div>
-        {temas.map((tema) => (
-          <article key={tema.titulo}>
-            <h3>{tema.titulo}</h3>
-            <p>{tema.descricao}</p>
-          </article>
-        ))}
+        <div className="text-center mb-5">
+
+          <span className="section-subtitle">
+            BEM-ESTAR
+          </span>
+
+          <h2 className="temas-title">
+            Cuide de diferentes áreas da sua vida
+          </h2>
+
+          <p className="section-text">
+            Pequenos hábitos podem contribuir para uma vida
+            mais equilibrada e saudável.
+          </p>
+
+        </div>
+
+        <div className="row g-4">
+
+          {temas.map((tema) => (
+            <div className="col-md-6 col-lg-3" key={tema.titulo}>
+
+              <article className="tema-card">
+
+                <div className="tema-icon">
+                     <span>{tema.icone}</span>
+                </div>
+
+                <h3>{tema.titulo}</h3>
+
+                <p>{tema.descricao}</p>
+
+              </article>
+
+            </div>
+          ))}
+
+        </div>
+
       </div>
+
     </section>
   )
 }

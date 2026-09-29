@@ -5,9 +5,9 @@ function Hero() {
         <span>ODS 3 • SAÚDE E BEM-ESTAR</span>
 
     <h1>
-       Cuidar da mente
+        Cuidar da mente
     <br />
-       também é <span>cuidar de<br />você.</span>
+        também é <span>cuidar de você.</span>
     </h1>
 
         <p>

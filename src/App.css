@@ -107,7 +107,7 @@ section {
   max-width: 560px;
 }
 
-#inicio span {
+#inicio > .hero-texto > span {
   display: inline-block;
   background: #dbeafe;
   color: #2455b8;
@@ -122,7 +122,19 @@ section {
   color: #23418f;
   font-size: 3rem;
   line-height: 1.1;
+  font-weight: 400;
   margin-bottom: 18px;
+}
+
+#inicio h1 span {
+  display: inline;
+  background: transparent;
+  color: #2563eb;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+  font-weight: 400;
+  margin: 0;
 }
 
 #inicio p {
@@ -823,11 +835,5 @@ footer p {
 
 }
 
-#temas .icone-alimentacao {
-  width: 48px;
-  height: 48px;
-  min-width: 48px;
-  min-height: 48px;
-  flex-shrink: 0;
-}
+
 

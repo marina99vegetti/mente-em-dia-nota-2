@@ -1,6 +1,6 @@
 :root {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #1e293b;
+  font-family: Arial, sans-serif;
+  color: #1e3a8a;
   background: #ffffff;
   line-height: 1.6;
 }
@@ -45,6 +45,7 @@ nav {
 nav h2 {
   color: #2563eb;
   font-size: 1.15rem;
+  font-weight: bold;
 }
 
 nav div {
@@ -119,11 +120,11 @@ section {
 }
 
 #inicio h1 {
-  color: #23418f;
-  font-size: 3rem;
+  color: #1e3a8a;
+  font-size: 4rem;
   line-height: 1.1;
-  font-weight: 400;
-  margin-bottom: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 #inicio h1 span {
@@ -133,14 +134,13 @@ section {
   padding: 0;
   border-radius: 0;
   font-size: inherit;
-  font-weight: 400;
   margin: 0;
 }
 
 #inicio p {
   max-width: 600px;
   color: #64748b;
-  font-size: 0.9rem;
+  font-size: 1.25rem;
   margin-bottom: 22px;
 }
 
@@ -169,8 +169,8 @@ section {
 }
 
 .hero-card {
-  width: 330px;
-  min-height: 190px;
+  width: 390px;
+  min-height: 250px;
   background: #ffffff;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(30, 58, 138, 0.12);
@@ -179,22 +179,24 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 30px;
+  padding: 40px;
 }
 
 .hero-icone {
-  font-size: 3rem;
-  margin-bottom: 12px;
+  font-size: 4rem;
+  margin-bottom: 18px;
 }
 
 .hero-card h3 {
-  color: #23418f;
-  font-size: 1rem;
-  margin-bottom: 5px;
+  color: #1e3a8a;
+  font-size: 1.35rem;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
 .hero-card p {
-  font-size: 0.65rem !important;
+  color: #64748b;
+  font-size: 0.85rem !important;
   margin: 0 !important;
 }
 
@@ -219,14 +221,15 @@ section {
 }
 
 #sobre h2 {
-  color: #23418f;
-  font-size: 1.7rem;
+  color: #1e3a8a;
+  font-size: 2.5rem;
+  font-weight: bold;
   margin-bottom: 8px;
 }
 
 #sobre .subtitulo {
   color: #64748b;
-  font-size: 0.75rem;
+  font-size: 1rem;
   margin: 0 auto 35px;
   max-width: 650px;
 }
@@ -253,8 +256,9 @@ section {
 }
 
 .sobre-card h3 {
-  color: #23418f;
+  color: #1e3a8a;
   font-size: 1rem;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
@@ -293,8 +297,9 @@ section {
 }
 
 .sobre-item h3 {
-  color: #23418f;
+  color: #1e3a8a;
   font-size: 0.8rem;
+  font-weight: bold;
   margin-bottom: 4px;
 }
 
@@ -355,7 +360,8 @@ section {
 
 .ods-texto h2 {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
   margin: 8px 0 12px;
 }
 
@@ -414,8 +420,9 @@ section {
 }
 
 #temas .temas-title {
-  color: #23418f;
-  font-size: 1.7rem;
+  color: #1e3a8a;
+  font-size: 2.5rem;
+  font-weight: bold;
   margin-bottom: 8px;
 }
 
@@ -472,8 +479,9 @@ section {
 }
 
 #temas .tema-card h3 {
-  color: #23418f;
-  font-size: 0.85rem;
+  color: #1e3a8a;
+  font-size: 1.25rem;
+  font-weight: bold;
   margin-bottom: 7px;
 }
 
@@ -514,8 +522,9 @@ section {
 }
 
 .publico-texto h2 {
-  color: #23418f;
-  font-size: 1.7rem;
+  color: #1e3a8a;
+  font-size: 2.5rem;
+  font-weight: bold;
   line-height: 1.2;
   margin-bottom: 15px;
 }
@@ -555,8 +564,9 @@ section {
 }
 
 .publico-item h3 {
-  color: #23418f;
-  font-size: 0.8rem;
+  color: #1e3a8a;
+  font-size: 1rem;
+  font-weight: bold;
   margin-bottom: 3px;
 }
 
@@ -582,8 +592,9 @@ section {
 }
 
 #recursos h2 {
-  color: #23418f;
-  font-size: 1.7rem;
+  color: #1e3a8a;
+  font-size: 2.5rem;
+  font-weight: bold;
   margin-bottom: 8px;
 }
 
@@ -615,7 +626,8 @@ section {
 
 #recursos h3,
 .busca-conteudos h3 {
-  color: #23418f;
+  color: #1e3a8a;
+  font-weight: bold;
   margin-bottom: 8px;
 }
 

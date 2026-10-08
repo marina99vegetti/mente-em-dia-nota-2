@@ -27,11 +27,11 @@ function Temas() {
   ]
 
   return (
-    <section id="temas" className="temas py-5">
+    <section id="temas" className="temas">
 
-      <div className="container py-5">
+      <div className="section-container">
 
-        <div className="text-center mb-5">
+        <div className="section-header">
 
           <span className="section-subtitle">
             BEM-ESTAR
@@ -48,24 +48,24 @@ function Temas() {
 
         </div>
 
-        <div className="row g-4">
+        <div className="temas-grid">
 
           {temas.map((tema) => (
-            <div className="col-md-6 col-lg-3" key={tema.titulo}>
+            <article className="tema-card" key={tema.titulo}>
 
-              <article className="tema-card">
+              <div className="tema-icon">
+                {tema.icone}
+              </div>
 
-                <div className="tema-icon">
-                     <span>{tema.icone}</span>
-                </div>
+              <h3>
+                {tema.titulo}
+              </h3>
 
-                <h3>{tema.titulo}</h3>
+              <p>
+                {tema.descricao}
+              </p>
 
-                <p>{tema.descricao}</p>
-
-              </article>
-
-            </div>
+            </article>
           ))}
 
         </div>

@@ -17,13 +17,9 @@ function BuscarConteudos() {
 
   return (
     <div className="busca-conteudos">
-      <h3>Buscar conteúdos</h3>
-
-      <p>
-        Pesquise informações sobre diferentes temas de saúde e bem-estar.
-      </p>
 
       <form onSubmit={pesquisar}>
+
         <input
           type="text"
           placeholder="Digite um tema..."
@@ -31,10 +27,18 @@ function BuscarConteudos() {
           onChange={(event) => setBusca(event.target.value)}
         />
 
-        <button type="submit">Pesquisar</button>
+        <button type="submit">
+          Pesquisar
+        </button>
+
       </form>
 
-      {mensagem && <p>{mensagem}</p>}
+      {mensagem && (
+        <p className="mensagem-busca">
+          {mensagem}
+        </p>
+      )}
+
     </div>
   )
 }

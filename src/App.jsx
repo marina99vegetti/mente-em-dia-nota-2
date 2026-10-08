@@ -15,21 +15,46 @@ function App() {
       <main>
         <Hero />
         <Sobre />
-        <Ods /> 
+        <Ods />
         <Temas />
         <Publico />
         <Recursos />
       </main>
 
-      <footer>
-        <p>Mente em Dia • ODS 3 • Saúde e Bem-Estar</p>
-        <p>Projeto acadêmico • 2026</p>
+      <footer className="footer">
+        <div className="footer-container">
+          <div className="footer-coluna">
+            <h3>🧠 Mente em Dia</h3>
+
+            <p>
+              Uma aplicação acadêmica desenvolvida com o objetivo
+              de apresentar informações sobre saúde e bem-estar.
+            </p>
+          </div>
+
+          <div className="footer-coluna">
+            <h4>Desenvolvimento Web</h4>
+
+            <p>
+              Projeto desenvolvido utilizando React, JavaScript,
+              CSS e consumo de API.
+            </p>
+
+            <p>
+              Relacionado ao ODS 3 — Saúde e Bem-Estar.
+            </p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div className="footer-bottom">
+          <p>© 2026 Mente em Dia • Projeto acadêmico</p>
+          <p>Desenvolvido para fins educacionais.</p>
+        </div>
       </footer>
     </div>
   )
 }
 
-export default App 
-
-
-
+export default App

@@ -1,30 +1,48 @@
 function Hero() {
   return (
-    <section id="inicio">
-      <div className="hero-texto">
-        <span>ODS 3 • SAÚDE E BEM-ESTAR</span>
+    <section id="inicio" className="hero">
 
-    <h1>
-        Cuidar da mente
-    <br />
-        também é <span>cuidar de você.</span>
-    </h1>
+      <div className="hero-container">
 
-        <p>
-          O Mente em Dia é uma aplicação criada para reunir informações sobre
-          saúde, bem-estar e qualidade de vida de forma simples e acessível.
-        </p>
+        <div className="hero-texto">
 
-        <a href="#sobre">Conheça o projeto</a>
+          <span className="ods-badge">
+            ODS 3 • Saúde e Bem-Estar
+          </span>
+
+          <h1>
+            Cuidar da mente também é
+            <span> cuidar de você.</span>
+          </h1>
+
+          <p className="lead">
+            O Mente em Dia é uma aplicação criada para reunir
+            informações sobre saúde, bem-estar e qualidade de vida
+            de forma simples e acessível.
+          </p>
+
+          <a href="#sobre" className="btn-primary">
+            Conheça o projeto
+          </a>
+
+        </div>
+
+        <div className="hero-card">
+
+          <div className="brain-icon">
+            🧠
+          </div>
+
+          <h2>Seu bem-estar importa.</h2>
+
+          <p>
+            Informação também é uma forma de cuidado.
+          </p>
+
+        </div>
+
       </div>
 
-      <div className="hero-card">
-        <div className="hero-icone">🧠</div>
-
-        <h3>Seu bem-estar importa.</h3>
-
-        <p>Informação também é uma forma de cuidado.</p>
-      </div>
     </section>
   )
 }

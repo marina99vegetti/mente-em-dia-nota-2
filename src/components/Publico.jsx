@@ -1,65 +1,74 @@
 function Publico() {
-  const publico = [
-    {
-      icone: '🎓',
-      titulo: 'Estudantes',
-      texto: 'Informações para quem vive uma rotina de estudos e busca cuidar do bem-estar.'
-    },
-    {
-      icone: '👥',
-      titulo: 'Jovens',
-      texto: 'Conteúdos acessíveis para jovens que desejam conhecer mais sobre saúde e qualidade de vida.'
-    },
-    {
-      icone: '💻',
-      titulo: 'Usuários digitais',
-      texto: 'Uma aplicação simples para quem busca informações de saúde e bem-estar na internet.'
-    }
-  ]
-
   return (
-    <section id="publico">
+    <section id="publico" className="publico">
 
-      <div className="publico-conteudo">
+      <div className="section-container">
 
-        <div className="publico-texto">
+        <div className="publico-grid">
 
-          <span className="publico-label">
-            PÚBLICO-ALVO
-          </span>
+          <div className="publico-texto">
 
-          <h2>
-            Feito para jovens e estudantes.
-          </h2>
+            <span className="section-subtitle">
+              PÚBLICO-ALVO
+            </span>
 
-          <p>
-            O Mente em Dia foi pensado principalmente para jovens e estudantes
-            que utilizam a internet em busca de informações sobre saúde e bem-estar.
-          </p>
+            <h2 className="publico-title">
+              Feito para jovens e estudantes.
+            </h2>
 
-          <p>
-            A proposta é oferecer conteúdos de forma simples, organizada e acessível,
-            contribuindo para o conhecimento e o cuidado com a qualidade de vida.
-          </p>
+            <p className="section-text">
+              O Mente em Dia foi pensado principalmente para jovens
+              e estudantes que buscam informações sobre saúde e
+              bem-estar de maneira simples, organizada e acessível.
+            </p>
 
-        </div>
+            <p className="section-text">
+              A proposta é apresentar conteúdos importantes de forma
+              clara, utilizando uma interface agradável e fácil
+              de navegar.
+            </p>
 
-        <div className="publico-lista">
+          </div>
 
-          {publico.map((item) => (
-            <div className="publico-item" key={item.titulo}>
+          <div className="publico-card">
 
-              <div className="publico-icone">
-                {item.icone}
-              </div>
+            <div className="publico-item">
 
-              <div>
-                <h3>{item.titulo}</h3>
-                <p>{item.texto}</p>
-              </div>
+              <span className="publico-icon">
+                🎓
+              </span>
+
+              <span>
+                Estudantes
+              </span>
 
             </div>
-          ))}
+
+            <div className="publico-item">
+
+              <span className="publico-icon">
+                👥
+              </span>
+
+              <span>
+                Jovens
+              </span>
+
+            </div>
+
+            <div className="publico-item">
+
+              <span className="publico-icon">
+                💻
+              </span>
+
+              <span>
+                Usuários digitais
+              </span>
+
+            </div>
+
+          </div>
 
         </div>
 

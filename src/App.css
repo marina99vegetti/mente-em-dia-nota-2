@@ -654,13 +654,16 @@ main {
    RESPONSIVIDADE
 ========================= */
 
-@media (max-width: 992px) {
+@media (max-width: 600px) {
+  .navbar-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
 
-  .hero-container,
-  .sobre-grid,
-  .ods-grid,
-  .publico-grid {
-    grid-template-columns: 1fr;
+  .navbar-brand {
+    margin-left: 0;
+    flex-shrink: 0;
   }
 
   .hero-texto {

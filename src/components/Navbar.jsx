@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 
 function Navbar() {
@@ -11,9 +12,13 @@ function Navbar() {
     <header>
       <nav className="navbar">
         <div className="navbar-container">
-
-          <a className="navbar-brand" href="#inicio" onClick={fecharMenu}>
-            🧠 Mente em Dia
+          <a
+            className="navbar-brand"
+            href="#inicio"
+            onClick={fecharMenu}
+          >
+            <span className="navbar-brain">🧠</span>
+            <span>Mente em Dia</span>
           </a>
 
           <button
@@ -21,6 +26,7 @@ function Navbar() {
             type="button"
             onClick={() => setMenuAberto(!menuAberto)}
             aria-label="Abrir menu"
+            aria-expanded={menuAberto}
           >
             ☰
           </button>
@@ -33,8 +39,6 @@ function Navbar() {
             <a href="#publico" onClick={fecharMenu}>Público-alvo</a>
             <a href="#recursos" onClick={fecharMenu}>Recursos</a>
           </div>
-
-
         </div>
       </nav>
     </header>

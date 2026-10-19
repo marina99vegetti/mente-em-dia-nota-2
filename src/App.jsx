@@ -1,4 +1,7 @@
+
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
+
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Sobre from './components/Sobre'
@@ -7,9 +10,13 @@ import Temas from './components/Temas'
 import Publico from './components/Publico'
 import Recursos from './components/Recursos'
 
-function App() {
+import Login from './pages/Login'
+import Cadastro from './pages/Cadastro'
+import MinhaArea from './pages/MinhaArea'
+
+function PaginaInicial() {
   return (
-    <div>
+    <>
       <Navbar />
 
       <main>
@@ -25,7 +32,6 @@ function App() {
         <div className="footer-container">
           <div className="footer-coluna">
             <h3>🧠 Mente em Dia</h3>
-
             <p>
               Uma aplicação acadêmica desenvolvida com o objetivo
               de apresentar informações sobre saúde e bem-estar.
@@ -34,15 +40,11 @@ function App() {
 
           <div className="footer-coluna">
             <h4>Desenvolvimento Web</h4>
-
             <p>
               Projeto desenvolvido utilizando React, JavaScript,
               CSS e consumo de API.
             </p>
-
-            <p>
-              Relacionado ao ODS 3 — Saúde e Bem-Estar.
-            </p>
+            <p>Relacionado ao ODS 3 — Saúde e Bem-Estar.</p>
           </div>
         </div>
 
@@ -53,7 +55,18 @@ function App() {
           <p>Desenvolvido para fins educacionais.</p>
         </div>
       </footer>
-    </div>
+    </>
+  )
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<PaginaInicial />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/cadastro" element={<Cadastro />} />
+      <Route path="/minha-area" element={<MinhaArea />} />
+    </Routes>
   )
 }
 

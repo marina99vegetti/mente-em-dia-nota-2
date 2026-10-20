@@ -1,5 +1,6 @@
 
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   const [menuAberto, setMenuAberto] = useState(false)
@@ -14,7 +15,7 @@ function Navbar() {
         <div className="navbar-container">
           <a
             className="navbar-brand"
-            href="#inicio"
+            href="/#inicio"
             onClick={fecharMenu}
           >
             <span className="navbar-brain">🧠</span>
@@ -32,12 +33,24 @@ function Navbar() {
           </button>
 
           <div className={`navbar-menu ${menuAberto ? 'aberto' : ''}`}>
-            <a href="#inicio" onClick={fecharMenu}>Início</a>
-            <a href="#sobre" onClick={fecharMenu}>Sobre</a>
-            <a href="#ods" onClick={fecharMenu}>ODS 3</a>
-            <a href="#temas" onClick={fecharMenu}>Bem-estar</a>
-            <a href="#publico" onClick={fecharMenu}>Público-alvo</a>
-            <a href="#recursos" onClick={fecharMenu}>Recursos</a>
+            <a href="/#inicio" onClick={fecharMenu}>Início</a>
+            <a href="/#sobre" onClick={fecharMenu}>Sobre</a>
+            <a href="/#ods" onClick={fecharMenu}>ODS 3</a>
+            <a href="/#temas" onClick={fecharMenu}>Bem-estar</a>
+            <a href="/#publico" onClick={fecharMenu}>Público-alvo</a>
+            <a href="/#recursos" onClick={fecharMenu}>Recursos</a>
+
+            <Link to="/login" onClick={fecharMenu}>
+              Entrar
+            </Link>
+
+            <Link to="/cadastro" onClick={fecharMenu}>
+              Criar conta
+            </Link>
+
+            <Link to="/minha-area" onClick={fecharMenu}>
+              Minha Área
+            </Link>
           </div>
         </div>
       </nav>
